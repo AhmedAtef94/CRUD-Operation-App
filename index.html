@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operation</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="w-50 mx-auto my-5">
+      <div class="form-group mx-auto mb-4">
+        <label for="productName" class="mb-2">Product Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Product Name"
+          id="productName"
+        />
+      </div>
+      <div class="form-group mb-4">
+        <label for="productPrice" class="mb-2">Product Price:</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Product Price"
+          id="productPrice"
+        />
+      </div>
+      <div class="form-group mb-4">
+        <label for="productCategory" class="mb-2">Product Category:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Product Category"
+          id="productCategory"
+        />
+      </div>
+      <div class="form-group mb-4">
+        <label for="productDescription" class="mb-2"
+          >Product Description:</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Product Description"
+          id="productDescription"
+        />
+      </div>
+      <button class="btn btn-outline-info" id="mainBtn" onclick="addProduct();">
+        Add Product
+      </button>
+      <button
+        class="btn btn-outline-success d-none"
+        id="updateBtn"
+        onclick="updateData();"
+      >
+        Update
+      </button>
+    </div>
+    <div class="w-50 mx-auto">
+      <div class="form-group p-3">
+        <label class="text-white" for="searchInput">Search</label>
+        <input type="text" name="" id="searchInput" class="form-control" />
+      </div>
+
+      <table class="table text-center text-white">
+        <thead id="dataDisplay">
+          <th>index</th>
+          <th>ProductName</th>
+          <th>ProductPrice</th>
+          <th>ProductCategory</th>
+          <th>ProductDesc</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="myData">
+          <!-- <tr>
+                    <td>0</td>
+                    <td>vsdf</td>
+                    <td>sdfsdf</td>
+                    <td>dsfdsfsa</td>
+                    <td>aghAG</td>
+                    <td> 
+                        <button class="btn btn-warning">Update</button>
+                    </td>
+
+                    <td> 
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                    
+                </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./script/main.js"></script>
+  </body>
+</html>
